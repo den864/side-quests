@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="myForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="usermail" id="email" placeholder="Example@email.com">
+                <p class="emailErrorMsg" style="color: red; font-size: 13px; display: none;">Make sure email has more than 3 characters and contains '@' and '.'(dot)</p>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="userpass" id="password" placeholder="Your Password">
+                <p class="passwordErrorMsg" style="color: red; font-size: 13px; display: none;">Make sure password is more than 8 characters.</p>
+            </div>
+
+            <div class="form-group successMsg" style="color: green; display: none">
+                All good to go!
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
