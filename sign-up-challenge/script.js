@@ -1,22 +1,7 @@
 const form=document.querySelector("#myForm");
-
-form.addEventListener("submit",(event)=>{
-    event.preventDefault();
-    const confirmSubmission=confirm("Are you ready to submit form?");
-
-    if(confirmSubmission){
-        alert("Successful signup!");
-    }else{
-        form.reset();
-        window.location.href = ""; // for reloading page
-    }
-    
-})
-
-
-
 const emailE=document.getElementById("email");
 const passwordE=document.getElementById("password");
+
 let okpass=false,okemail=false;
 
 emailE.addEventListener("change",(event)=>{
@@ -47,6 +32,24 @@ passwordE.addEventListener("change",(event)=>{
 
     validateData(okemail,okpass);
 
+})
+
+
+form.addEventListener("submit",(event)=>{
+    event.preventDefault();
+    if(!okemail || !okpass){
+        alert("Please fill your details correctly");
+        return;
+    }
+    const confirmSubmission=confirm("Are you ready to submit form?");
+
+    if(confirmSubmission){
+        alert("Successful signup!");
+    }else{
+        form.reset();
+        window.location.reload(); // for reloading page
+    }
+    
 })
 
 
