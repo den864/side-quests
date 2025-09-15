@@ -1,6 +1,6 @@
 const userArr=[];
+const cls=['display_id','display_name','display_prof','display_age']; 
 let id=1;
-
 
 const form=document.querySelector("form");
 
@@ -54,13 +54,13 @@ function renderData(){
         div.classList.add("employee-details");
 
         let html="";
-
+        let i=1;
         for(let key in user){
         
             if(key==='id'){
-                html+=`<div>${user[key]}</div>`;
+                html+=`<div class='${cls[0]}'>${user[key]}</div>`;
             }else{
-                html+=`<div>${key}: ${user[key]}</div>`;
+                html+=`<div class='${cls[i++]}'>${key}: ${user[key]}</div>`;
             }
         }
         div.innerHTML=html;
