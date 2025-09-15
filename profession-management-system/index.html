@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <h1>New Employees</h1>
+            <div class="form-group">
+                <label for="username">Name</label><br>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="profession">Profession</label><br>
+                <input type="text" name="userprofession" id="profession">
+            </div>
+            <div class="form-group">
+                <label for="userage">Age</label><br>
+                <input type="text" name="userage" id="userage">
+            </div>
+            <div class="submit-btn">
+                <button type="submit">Add User</button>
+            </div>
+            <div class="error" style="display: none; color: rgba(255, 0, 0, 0.8);">
+                Error: Fill all the required fields
+            </div>
+            <div class="success" style="color: rgb(22, 189, 22); display: none;">
+                Success: Employee Added!
+            </div>
+        </form>
+
+        <div class="data">
+            <h1>Added Employee</h1> 
+
+            <div class="employee-data"></div>
+
+            <!-- <div class="employee-details">
+                <p class="did">1</p>
+                <p class="dname">name: alex</p>
+                <p class="dprof">profession: developer</p>
+                <p class="dage">age: 22</p>
+            </div> -->
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

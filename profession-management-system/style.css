@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: black;
+  color: #fff;
+}
+
+.container{
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+form{
+  border-radius: 10px;
+  padding: 25px 20px;
+  margin-bottom: 25px;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+label{
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"]{
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 8px;
+
+}
+
+.submit-btn{
+  margin-top: 10px;
+}
+
+button{
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+.error,
+.success{
+  margin-top: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+
+.data{
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.data h1{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+form h1{
+   margin-bottom: 30px;
+   font-size: 1.5rem;
+}
+.employee-data{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+
+.employee-details div{
+  flex: 1;
+  font-size: 0.95rem;
+}
+
+.employee-details button{
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  margin-left: 10px;
+  border: 1px solid white;
+}
+
